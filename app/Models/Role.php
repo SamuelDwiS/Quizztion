@@ -12,8 +12,19 @@ class Role extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'role',
-        'permission'
+        'role'
     ];
 
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'user_roles')
+            ->withTimestamps()
+            ->withPivot('assigned_at');
+    }
+
+    public function permissions()
+    {
+        return $this->belongsToMany(Permission::class, 'role_permission')
+            ->withTimestamps();
+    }
 }
