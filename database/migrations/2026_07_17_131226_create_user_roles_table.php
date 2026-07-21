@@ -25,6 +25,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_roles');
+        Schema::table('user_roles', function (Blueprint $table) {
+            $table->dropUnique('user_role_unique');
+            $table->dropColumn('assigned_at');
+        });
     }
 };

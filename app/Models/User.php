@@ -60,10 +60,45 @@ class User extends Authenticatable implements PasskeyUser
             : $initials;
     }
 
+    /**
+     * User has many roles
+     */
     public function roles()
     {
         return $this->belongsToMany(Role::class, 'user_roles')
             ->withTimestamps()
             ->withPivot('assigned_at');
+    }
+
+    /**
+     * User has authored many materials
+     */
+    public function materials()
+    {
+        return $this->hasMany(Material::class, 'user_id');
+    }
+
+    /**
+     * User has many quiz attempts
+     */
+    public function quizAttempts()
+    {
+        return $this->hasMany(QuizzAttempt::class, 'user_id');
+    }
+
+    /**
+     * User has many ai sessions
+     */
+    public function aiSessions()
+    {
+        return $this->hasMany(AiSession::class, 'user_id');
+    }
+
+    /**
+     * User has many login attempts
+     */
+    public function loginAttempts()
+    {
+        return $this->hasMany(UserAttempt::class, 'user_id');
     }
 }

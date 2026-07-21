@@ -81,7 +81,7 @@ Table permissions {
 }
 
 // Pivot Table untuk Many-to-Many: Users <-> Roles
-Table user_role {
+Table user_roles {
   user_id integer [ref: > users.id]
   role_id integer [ref: > roles.id]
   primary key (user_id, role_id)
