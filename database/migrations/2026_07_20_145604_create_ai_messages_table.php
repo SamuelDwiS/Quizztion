@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('sender')->comment('user or model');
             $table->string('role')->nullable()->comment('assistant, user, system for API metadata');
             $table->longText('message');
-            $table->json('metadata')->nullable()->comment('tokens, model version, latency, etc');
+            $table->jsonb('metadata')->nullable()->comment('tokens, model version, latency, etc');
             $table->timestamps();
         });
     }

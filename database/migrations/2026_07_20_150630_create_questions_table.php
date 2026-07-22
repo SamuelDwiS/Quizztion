@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('type')->default('single')->comment('single, multiple, essay, numeric');
             $table->text('question');
             $table->decimal('max_score', 5, 2)->default(1.00);
-            $table->json('metadata')->nullable()->comment('hints, difficulty, source_span');
+            $table->jsonb('metadata')->nullable()->comment('hints, difficulty, source_span');
             $table->timestamps();
             $table->softDeletes();
         });

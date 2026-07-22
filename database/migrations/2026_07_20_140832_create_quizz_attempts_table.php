@@ -18,7 +18,7 @@ return new class extends Migration
             $table->decimal('score', 5, 2)->default(0);
             $table->decimal('max_score', 5, 2)->default(1);
             $table->integer('attempt_number')->default(1);
-            $table->json('answers')->nullable()->comment('Structured answers: {question_id: {choice: A, text: ...}}');
+            $table->jsonb('answers')->nullable()->comment('Structured answers: {question_id: {choice: A, text: ...}}');
             $table->string('status')->default('completed')->comment('in_progress, completed, aborted');
             $table->timestamp('started_at')->nullable();
             $table->timestamp('finished_at')->nullable();
