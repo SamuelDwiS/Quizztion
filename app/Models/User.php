@@ -80,6 +80,22 @@ class User extends Authenticatable implements PasskeyUser
     }
 
     /**
+     * Check whether the user has a specific role by role name.
+     */
+    public function hasRole(string $role): bool
+    {
+        return $this->roles()->where('role', $role)->exists();
+    }
+
+    /**
+     * Get the user's primary role name.
+     */
+    public function getPrimaryRoleName(): ?string
+    {
+        return $this->roles()->value('role');
+    }
+
+    /**
      * User has authored many materials
      */
     public function materials()
