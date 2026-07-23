@@ -48,14 +48,17 @@ class User extends Authenticatable implements PasskeyUser
         ];
     }
 
-    // public static function booted(): void
-    // {
-    //     static::created(function (User $user) {
-    //         if (empty($user->uuid)) {
-    //             $user->uuid = (string) Str::uuid();
-    //         }
-    //     });
-    // }
+    public static function booted(): void
+    {
+        static::created(function (User $user) {
+            if (! $user->roles()->exists()) {
+                $studentRole = Role::where('role', 'student')->first();
+                if ($studentRole) {
+                    $user->roles()->attach($studentRole->id);
+                }
+            }
+        });
+    }
 
     /**
      * Get the user's initials
