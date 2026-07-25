@@ -1,0 +1,749 @@
+{
+  "communities": {
+    "0": [
+      "app_models_aimessage",
+      "app_models_aimessage_aimessage",
+      "app_models_aimessage_aimessage_session",
+      "app_models_aisession",
+      "app_models_aisession_aisession",
+      "app_models_aisession_aisession_messages",
+      "app_models_aisession_aisession_user",
+      "app_models_choice",
+      "app_models_choice_choice",
+      "app_models_choice_choice_question",
+      "app_models_department",
+      "app_models_department_department",
+      "app_models_material",
+      "app_models_material_material",
+      "app_models_material_material_author",
+      "app_models_material_material_quizzes",
+      "app_models_material_material_subject",
+      "app_models_permission",
+      "app_models_permission_permission",
+      "app_models_permission_permission_roles",
+      "app_models_question",
+      "app_models_question_question",
+      "app_models_question_question_choices",
+      "app_models_question_question_quiz",
+      "app_models_quizz",
+      "app_models_quizz_quizz",
+      "app_models_quizz_quizz_attempts",
+      "app_models_quizz_quizz_material",
+      "app_models_quizz_quizz_questions",
+      "app_models_quizzattempt",
+      "app_models_quizzattempt_quizzattempt",
+      "app_models_quizzattempt_quizzattempt_quiz",
+      "app_models_quizzattempt_quizzattempt_user",
+      "app_models_rolepermission",
+      "app_models_rolepermission_rolepermission",
+      "app_models_studentclass",
+      "app_models_studentclass_studentclass",
+      "app_models_subject",
+      "app_models_subject_subject",
+      "app_models_userattempt",
+      "app_models_userattempt_userattempt",
+      "app_models_userattempt_userattempt_user",
+      "app_models_userrole",
+      "app_models_userrole_userrole",
+      "illuminate_database_eloquent_model",
+      "illuminate_database_eloquent_relations_belongsto",
+      "illuminate_database_eloquent_relations_hasmany",
+      "illuminate_database_eloquent_softdeletes"
+    ],
+    "1": [
+      "app_actions_fortify_createnewuser_createnewuser_create",
+      "app_models_role",
+      "app_models_role_role",
+      "app_models_role_role_permissions",
+      "app_models_role_role_users",
+      "app_models_user",
+      "app_models_user_user",
+      "app_models_user_user_aisessions",
+      "app_models_user_user_booted",
+      "app_models_user_user_casts",
+      "app_models_user_user_getprimaryrolename",
+      "app_models_user_user_hasrole",
+      "app_models_user_user_initials",
+      "app_models_user_user_loginattempts",
+      "app_models_user_user_materials",
+      "app_models_user_user_quizattempts",
+      "app_models_user_user_roles",
+      "database_seeders_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder_run",
+      "database_seeders_roleseeder",
+      "database_seeders_roleseeder_roleseeder",
+      "database_seeders_roleseeder_roleseeder_run",
+      "illuminate_database_console_seeds_withoutmodelevents",
+      "illuminate_database_eloquent_factories_hasfactory",
+      "illuminate_database_seeder",
+      "illuminate_foundation_auth_user",
+      "illuminate_notifications_notifiable",
+      "laravel_fortify_contracts_passkeyuser",
+      "laravel_fortify_passkeyauthenticatable",
+      "laravel_fortify_twofactorauthenticatable",
+      "tests_feature_auth_authenticationtest",
+      "tests_feature_auth_emailverificationtest",
+      "tests_feature_auth_passwordconfirmationtest",
+      "tests_feature_auth_passwordresettest",
+      "tests_feature_auth_twofactorchallengetest",
+      "tests_feature_dashboardtest",
+      "tests_feature_settings_profileupdatetest",
+      "tests_feature_settings_securitytest"
+    ],
+    "2": [
+      "composer_scripts",
+      "composer_scripts_ci_check",
+      "composer_scripts_dev",
+      "composer_scripts_lint",
+      "composer_scripts_lint_check",
+      "composer_scripts_post_autoload_dump",
+      "composer_scripts_post_create_project_cmd",
+      "composer_scripts_post_root_package_install",
+      "composer_scripts_post_update_cmd",
+      "composer_scripts_pre_package_uninstall",
+      "composer_scripts_setup",
+      "composer_scripts_test",
+      "composer_scripts_types_check",
+      "ref_composer_config_disableprocesstimeout",
+      "ref_composer_install",
+      "ref_illuminate_foundation_composerscripts_postautoloaddump",
+      "ref_illuminate_foundation_composerscripts_prepackageuninstall",
+      "ref_lint_check",
+      "ref_npm_install",
+      "ref_npm_run_build",
+      "ref_npx_concurrently_c_93c5fd_c4b5fd_fdba74_php_artisan_serve_php_artisan_queue_listen_tries_1_npm_run_dev_names_server_queue_vite",
+      "ref_php_artisan_config_clear_ansi",
+      "ref_php_artisan_key_generate",
+      "ref_php_artisan_key_generate_ansi",
+      "ref_php_artisan_migrate_force",
+      "ref_php_artisan_migrate_graceful_ansi",
+      "ref_php_artisan_package_discover_ansi",
+      "ref_php_artisan_test",
+      "ref_php_artisan_vendor_publish_tag_laravel_assets_ansi_force",
+      "ref_php_r_file_exists_database_database_sqlite_touch_database_database_sqlite",
+      "ref_php_r_file_exists_env_copy_env_example_env",
+      "ref_phpstan_analyse",
+      "ref_pint_parallel",
+      "ref_pint_parallel_test",
+      "ref_test",
+      "ref_types_check"
+    ],
+    "3": [
+      "composer",
+      "composer_autoload",
+      "composer_autoload_dev",
+      "composer_autoload_dev_psr_4",
+      "composer_autoload_psr_4",
+      "composer_description",
+      "composer_extra",
+      "composer_extra_laravel",
+      "composer_installer_post_create_project",
+      "composer_keywords",
+      "composer_laravel_dont_discover",
+      "composer_laravel_installer",
+      "composer_license",
+      "composer_minimum_stability",
+      "composer_name",
+      "composer_prefer_stable",
+      "composer_psr_4_app",
+      "composer_psr_4_database_factories",
+      "composer_psr_4_database_seeders",
+      "composer_psr_4_tests",
+      "composer_require",
+      "composer_require_laravel_chisel",
+      "composer_require_laravel_fortify",
+      "composer_require_laravel_framework",
+      "composer_require_laravel_tinker",
+      "composer_require_livewire_blaze",
+      "composer_require_livewire_flux",
+      "composer_require_livewire_livewire",
+      "composer_require_php",
+      "composer_schema",
+      "composer_type",
+      "ref_framework",
+      "ref_laravel"
+    ],
+    "4": [
+      "concurrently",
+      "laravel_passkeys",
+      "laravel_vite_plugin",
+      "lightningcss_linux_x64_gnu",
+      "package",
+      "package_dependencies",
+      "package_dependencies_concurrently",
+      "package_dependencies_laravel_passkeys",
+      "package_dependencies_laravel_vite_plugin",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "package_dependencies_vite",
+      "package_optionaldependencies",
+      "package_optionaldependencies_lightningcss_linux_x64_gnu",
+      "package_optionaldependencies_rollup_rollup_linux_x64_gnu",
+      "package_optionaldependencies_tailwindcss_oxide_linux_x64_gnu",
+      "package_private",
+      "package_schema",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_type",
+      "rollup_rollup_linux_x64_gnu",
+      "tailwindcss",
+      "tailwindcss_oxide_linux_x64_gnu",
+      "tailwindcss_vite",
+      "vite"
+    ],
+    "5": [
+      "app_providers_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider_boot",
+      "app_providers_appserviceprovider_appserviceprovider_configuredefaults",
+      "app_providers_appserviceprovider_appserviceprovider_register",
+      "app_providers_fortifyserviceprovider",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider_boot",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider_configureactions",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider_configureratelimiting",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider_configureviews",
+      "app_providers_fortifyserviceprovider_fortifyserviceprovider_register",
+      "bootstrap_providers",
+      "config_fortify",
+      "illuminate_support_serviceprovider"
+    ],
+    "6": [
+      "app_actions_fortify_createnewuser",
+      "app_actions_fortify_createnewuser_createnewuser",
+      "app_actions_fortify_resetuserpassword",
+      "app_actions_fortify_resetuserpassword_resetuserpassword",
+      "app_actions_fortify_resetuserpassword_resetuserpassword_reset",
+      "app_concerns_passwordvalidationrules",
+      "app_concerns_passwordvalidationrules_currentpasswordrules",
+      "app_concerns_passwordvalidationrules_passwordrules",
+      "app_concerns_profilevalidationrules",
+      "app_concerns_profilevalidationrules_emailrules",
+      "app_concerns_profilevalidationrules_namerules",
+      "app_concerns_profilevalidationrules_profilerules",
+      "laravel_fortify_contracts_createsnewusers",
+      "laravel_fortify_contracts_resetsuserpasswords"
+    ],
+    "7": [
+      "composer_require_dev",
+      "composer_require_dev_fakerphp_faker",
+      "composer_require_dev_larastan_larastan",
+      "composer_require_dev_laravel_pail",
+      "composer_require_dev_laravel_pao",
+      "composer_require_dev_laravel_pint",
+      "composer_require_dev_laravel_sail",
+      "composer_require_dev_mockery_mockery",
+      "composer_require_dev_nunomaduro_collision",
+      "composer_require_dev_pestphp_pest",
+      "composer_require_dev_pestphp_pest_plugin_laravel"
+    ],
+    "8": [
+      "closedeletemodal",
+      "confirmdelete_passkey",
+      "deletepasskey",
+      "disable",
+      "dispatch",
+      "resources_views_pages_settings_security_blade",
+      "resources_views_pages_settings_security_blade_php_pages",
+      "resources_views_pages_settings_security_blade_php_partials_settings_heading"
+    ],
+    "9": [
+      "app_livewire_actions_logout",
+      "app_livewire_actions_logout_logout",
+      "app_livewire_actions_logout_logout_invoke",
+      "config_auth",
+      "config_session",
+      "illuminate_http_redirectresponse",
+      "livewire_features_supportredirects_redirector"
+    ],
+    "10": [
+      "composer_allow_plugins_pestphp_pest_plugin",
+      "composer_allow_plugins_php_http_discovery",
+      "composer_config",
+      "composer_config_allow_plugins",
+      "composer_config_optimize_autoloader",
+      "composer_config_preferred_install",
+      "composer_config_sort_packages"
+    ],
+    "11": [
+      "database_factories_userfactory",
+      "database_factories_userfactory_userfactory",
+      "database_factories_userfactory_userfactory_definition",
+      "database_factories_userfactory_userfactory_unverified",
+      "database_factories_userfactory_userfactory_withtwofactor",
+      "illuminate_database_eloquent_factories_factory",
+      "static"
+    ],
+    "12": [
+      "illuminate_foundation_testing_testcase",
+      "tests_pest",
+      "tests_pest_something",
+      "tests_testcase",
+      "tests_testcase_testcase",
+      "tests_testcase_testcase_skipunlessfortifyhas"
+    ],
+    "13": [
+      "confirmtwofactor",
+      "resetverification",
+      "resources_views_pages_settings_two_factor_setup_modal_blade",
+      "showverificationifnecessary"
+    ],
+    "14": [
+      "database_migrations_0001_01_01_000001_create_cache_table",
+      "database_migrations_0001_01_01_000001_create_cache_table_down",
+      "database_migrations_0001_01_01_000001_create_cache_table_up"
+    ],
+    "15": [
+      "database_migrations_0001_01_01_000002_create_jobs_table",
+      "database_migrations_0001_01_01_000002_create_jobs_table_down",
+      "database_migrations_0001_01_01_000002_create_jobs_table_up"
+    ],
+    "16": [
+      "database_migrations_2026_07_16_133824_create_roles_table",
+      "database_migrations_2026_07_16_133824_create_roles_table_down",
+      "database_migrations_2026_07_16_133824_create_roles_table_up"
+    ],
+    "17": [
+      "database_migrations_2026_07_16_133825_create_permissions_table",
+      "database_migrations_2026_07_16_133825_create_permissions_table_down",
+      "database_migrations_2026_07_16_133825_create_permissions_table_up"
+    ],
+    "18": [
+      "database_migrations_2026_07_16_134622_create_departments_table",
+      "database_migrations_2026_07_16_134622_create_departments_table_down",
+      "database_migrations_2026_07_16_134622_create_departments_table_up"
+    ],
+    "19": [
+      "database_migrations_2026_07_16_140723_create_student_classes_table",
+      "database_migrations_2026_07_16_140723_create_student_classes_table_down",
+      "database_migrations_2026_07_16_140723_create_student_classes_table_up"
+    ],
+    "20": [
+      "database_migrations_2026_07_17_125522_create_subjects_table",
+      "database_migrations_2026_07_17_125522_create_subjects_table_down",
+      "database_migrations_2026_07_17_125522_create_subjects_table_up"
+    ],
+    "21": [
+      "database_migrations_2026_07_17_125523_create_role_permissions_table",
+      "database_migrations_2026_07_17_125523_create_role_permissions_table_down",
+      "database_migrations_2026_07_17_125523_create_role_permissions_table_up"
+    ],
+    "22": [
+      "database_migrations_2026_07_17_131215_create_users_table",
+      "database_migrations_2026_07_17_131215_create_users_table_down",
+      "database_migrations_2026_07_17_131215_create_users_table_up"
+    ],
+    "23": [
+      "database_migrations_2026_07_17_131216_create_passkeys_table",
+      "database_migrations_2026_07_17_131216_create_passkeys_table_down",
+      "database_migrations_2026_07_17_131216_create_passkeys_table_up"
+    ],
+    "24": [
+      "database_migrations_2026_07_17_131217_add_two_factor_columns_to_users_table",
+      "database_migrations_2026_07_17_131217_add_two_factor_columns_to_users_table_down",
+      "database_migrations_2026_07_17_131217_add_two_factor_columns_to_users_table_up"
+    ],
+    "25": [
+      "database_migrations_2026_07_17_131226_create_user_roles_table",
+      "database_migrations_2026_07_17_131226_create_user_roles_table_down",
+      "database_migrations_2026_07_17_131226_create_user_roles_table_up"
+    ],
+    "26": [
+      "database_migrations_2026_07_17_140010_update_user_roles_table",
+      "database_migrations_2026_07_17_140010_update_user_roles_table_down",
+      "database_migrations_2026_07_17_140010_update_user_roles_table_up"
+    ],
+    "27": [
+      "database_migrations_2026_07_20_122122_create_materials_table",
+      "database_migrations_2026_07_20_122122_create_materials_table_down",
+      "database_migrations_2026_07_20_122122_create_materials_table_up"
+    ],
+    "28": [
+      "database_migrations_2026_07_20_135623_create_quizzes_table",
+      "database_migrations_2026_07_20_135623_create_quizzes_table_down",
+      "database_migrations_2026_07_20_135623_create_quizzes_table_up"
+    ],
+    "29": [
+      "database_migrations_2026_07_20_140832_create_quizz_attempts_table",
+      "database_migrations_2026_07_20_140832_create_quizz_attempts_table_down",
+      "database_migrations_2026_07_20_140832_create_quizz_attempts_table_up"
+    ],
+    "30": [
+      "database_migrations_2026_07_20_143036_create_ai_sessions_table",
+      "database_migrations_2026_07_20_143036_create_ai_sessions_table_down",
+      "database_migrations_2026_07_20_143036_create_ai_sessions_table_up"
+    ],
+    "31": [
+      "database_migrations_2026_07_20_145604_create_ai_messages_table",
+      "database_migrations_2026_07_20_145604_create_ai_messages_table_down",
+      "database_migrations_2026_07_20_145604_create_ai_messages_table_up"
+    ],
+    "32": [
+      "database_migrations_2026_07_20_150620_create_login_attempts_table",
+      "database_migrations_2026_07_20_150620_create_login_attempts_table_down",
+      "database_migrations_2026_07_20_150620_create_login_attempts_table_up"
+    ],
+    "33": [
+      "database_migrations_2026_07_20_150630_create_questions_table",
+      "database_migrations_2026_07_20_150630_create_questions_table_down",
+      "database_migrations_2026_07_20_150630_create_questions_table_up"
+    ],
+    "34": [
+      "database_migrations_2026_07_20_150640_create_choices_table",
+      "database_migrations_2026_07_20_150640_create_choices_table_down",
+      "database_migrations_2026_07_20_150640_create_choices_table_up"
+    ],
+    "35": [
+      "resources_views_pages_settings_profile_blade",
+      "resources_views_pages_settings_profile_blade_php_pages",
+      "resources_views_pages_settings_profile_blade_php_partials_settings_heading"
+    ],
+    "36": [
+      "app_http_controllers_controller",
+      "app_http_controllers_controller_controller"
+    ],
+    "37": [
+      "artisan",
+      "routes_console"
+    ],
+    "38": [
+      "regeneraterecoverycodes",
+      "resources_views_pages_settings_two_factor_recovery_codes_blade"
+    ],
+    "39": [
+      "resources_views_layouts_app_header_blade",
+      "resources_views_layouts_app_header_blade_php_partials_head"
+    ],
+    "40": [
+      "resources_views_layouts_app_sidebar_blade",
+      "resources_views_layouts_app_sidebar_blade_php_partials_head"
+    ],
+    "41": [
+      "resources_views_layouts_auth_card_blade",
+      "resources_views_layouts_auth_card_blade_php_partials_head"
+    ],
+    "42": [
+      "resources_views_layouts_auth_simple_blade",
+      "resources_views_layouts_auth_simple_blade_php_partials_head"
+    ],
+    "43": [
+      "resources_views_layouts_auth_split_blade",
+      "resources_views_layouts_auth_split_blade_php_partials_head"
+    ],
+    "44": [
+      "resources_views_pages_settings_appearance_blade",
+      "resources_views_pages_settings_appearance_blade_php_partials_settings_heading"
+    ],
+    "45": [
+      "resources_views_pages_settings_delete_user_form_blade",
+      "resources_views_pages_settings_delete_user_form_blade_php_pages"
+    ],
+    "46": [
+      "bootstrap_app"
+    ],
+    "47": [
+      "config_app"
+    ],
+    "48": [
+      "config_cache"
+    ],
+    "49": [
+      "config_database"
+    ],
+    "50": [
+      "config_filesystems"
+    ],
+    "51": [
+      "config_logging"
+    ],
+    "52": [
+      "config_mail"
+    ],
+    "53": [
+      "config_queue"
+    ],
+    "54": [
+      "config_services"
+    ],
+    "55": [
+      "public_index"
+    ],
+    "56": [
+      "resources_js_app"
+    ],
+    "57": [
+      "resources_js_passkeys"
+    ],
+    "58": [
+      "resources_views_components_app_logo_blade"
+    ],
+    "59": [
+      "resources_views_components_app_logo_icon_blade"
+    ],
+    "60": [
+      "resources_views_components_auth_header_blade"
+    ],
+    "61": [
+      "resources_views_components_auth_session_status_blade"
+    ],
+    "62": [
+      "resources_views_components_desktop_user_menu_blade"
+    ],
+    "63": [
+      "resources_views_components_passkey_registration_blade"
+    ],
+    "64": [
+      "resources_views_components_passkey_verify_blade"
+    ],
+    "65": [
+      "resources_views_components_placeholder_pattern_blade"
+    ],
+    "66": [
+      "resources_views_dashboard_blade"
+    ],
+    "67": [
+      "resources_views_flux_icon_book_open_text_blade"
+    ],
+    "68": [
+      "resources_views_flux_icon_chevrons_up_down_blade"
+    ],
+    "69": [
+      "resources_views_flux_icon_folder_git_2_blade"
+    ],
+    "70": [
+      "resources_views_flux_icon_layout_grid_blade"
+    ],
+    "71": [
+      "resources_views_flux_navlist_group_blade"
+    ],
+    "72": [
+      "resources_views_layouts_app_blade"
+    ],
+    "73": [
+      "resources_views_layouts_auth_blade"
+    ],
+    "74": [
+      "resources_views_pages_auth_confirm_password_blade"
+    ],
+    "75": [
+      "resources_views_pages_auth_forgot_password_blade"
+    ],
+    "76": [
+      "resources_views_pages_auth_login_blade"
+    ],
+    "77": [
+      "resources_views_pages_auth_register_blade"
+    ],
+    "78": [
+      "resources_views_pages_auth_reset_password_blade"
+    ],
+    "79": [
+      "resources_views_pages_auth_two_factor_challenge_blade"
+    ],
+    "80": [
+      "resources_views_pages_auth_verify_email_blade"
+    ],
+    "81": [
+      "resources_views_pages_settings_delete_user_modal_blade"
+    ],
+    "82": [
+      "resources_views_pages_settings_layout_blade"
+    ],
+    "83": [
+      "resources_views_pages_student_dashboard_blade"
+    ],
+    "84": [
+      "resources_views_partials_head_blade"
+    ],
+    "85": [
+      "resources_views_partials_settings_heading_blade"
+    ],
+    "86": [
+      "resources_views_welcome_blade"
+    ],
+    "87": [
+      "routes_settings"
+    ],
+    "88": [
+      "routes_web"
+    ],
+    "89": [
+      "tests_feature_auth_registrationtest"
+    ],
+    "90": [
+      "tests_feature_exampletest"
+    ],
+    "91": [
+      "tests_unit_exampletest"
+    ],
+    "92": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08244680851063829,
+    "1": 0.0728744939271255,
+    "2": 0.05873015873015873,
+    "3": 0.06060606060606061,
+    "4": 0.07407407407407407,
+    "5": 0.2,
+    "6": 0.21978021978021978,
+    "7": 0.18181818181818182,
+    "8": 0.25,
+    "9": 0.38095238095238093,
+    "10": 0.2857142857142857,
+    "11": 0.42857142857142855,
+    "12": 0.3333333333333333,
+    "13": 0.5,
+    "14": 0.6666666666666666,
+    "15": 0.6666666666666666,
+    "16": 0.6666666666666666,
+    "17": 0.6666666666666666,
+    "18": 0.6666666666666666,
+    "19": 0.6666666666666666,
+    "20": 0.6666666666666666,
+    "21": 0.6666666666666666,
+    "22": 0.6666666666666666,
+    "23": 0.6666666666666666,
+    "24": 0.6666666666666666,
+    "25": 0.6666666666666666,
+    "26": 0.6666666666666666,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 0.6666666666666666,
+    "33": 0.6666666666666666,
+    "34": 0.6666666666666666,
+    "35": 0.6666666666666666,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_models_user_user",
+      "label": "User",
+      "degree": 22
+    },
+    {
+      "id": "composer_scripts",
+      "label": "scripts",
+      "degree": 13
+    },
+    {
+      "id": "composer_require_dev",
+      "label": "require-dev",
+      "degree": 11
+    },
+    {
+      "id": "composer_require",
+      "label": "require",
+      "degree": 9
+    },
+    {
+      "id": "app_providers_fortifyserviceprovider_fortifyserviceprovider",
+      "label": "FortifyServiceProvider",
+      "degree": 7
+    },
+    {
+      "id": "composer_scripts_setup",
+      "label": "setup",
+      "degree": 7
+    },
+    {
+      "id": "app_models_material_material",
+      "label": "Material",
+      "degree": 6
+    },
+    {
+      "id": "app_models_quizz_quizz",
+      "label": "Quizz",
+      "degree": 6
+    },
+    {
+      "id": "app_models_role_role",
+      "label": "Role",
+      "degree": 6
+    },
+    {
+      "id": "app_actions_fortify_createnewuser_createnewuser",
+      "label": "CreateNewUser",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Role",
+      "target": "Illuminate\\Database\\Eloquent\\Model",
+      "source_files": [
+        "app/Models/Role.php",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "note": "Bridges community 1 \u2192 community 0"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
