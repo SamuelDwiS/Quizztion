@@ -11,37 +11,24 @@
     @endphp
     <flux:sidebar sticky collapsible="mobile"
         class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+
         <flux:sidebar.header>
-            <x-app-logo :sidebar="true" href="{{ route('dashboard') }}" wire:navigate />
+            <x-app-logo :sidebar="true" href="{{ route($userRole . '.dashboard') }}" wire:navigate />
             <flux:sidebar.collapse class="lg:hidden" />
         </flux:sidebar.header>
 
         <flux:sidebar.nav>
-            <flux:sidebar.group :heading="__($userRole)" class="grid">
-                <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')"
-                    wire:navigate>
-                    {{ __('Dashboard') }}
-                </flux:sidebar.item>
-            </flux:sidebar.group>
+            <flux:sidebar.item icon="home" :href="route($userRole.
+                '.dashboard')"
+                :current="request()->routeIs($userRole. '.dashboard')" wire:navigate>
+                {{ __('Dashboard') }}
+            </flux:sidebar.item>
         </flux:sidebar.nav>
-
 
         {{-- Role-based Sidebar --}}
         @if ($userRole === 'student')
-            <flux:sidebar.header>
-                <x-app-logo :sidebar="true" href="{{ route('student.dashboard') }}" wire:navigate />
-                <flux:sidebar.collapse class="lg:hidden" />
-            </flux:sidebar.header>
-
             <flux:sidebar.nav>
-                <flux:sidebar.item icon="home" :href="route('student.dashboard')"
-                    :current="request()->routeIs('student.dashboard')" wire:navigate>
-                    {{ __('Dashboard') }}
-                </flux:sidebar.item>
-            </flux:sidebar.nav>
-
-            <flux:sidebar.nav>
-                <flux:sidebar.group :heading="__('Platform')" class="grid">
+                <flux:sidebar.group :heading="__(Str::ucfirst($userRole))" class="grid">
                     <flux:sidebar.item icon="book-open" :href="route('student.material')"
                         :current="request()->routeIs('student.material')" wire:navigate>
                         {{ __('Module') }}
@@ -57,44 +44,38 @@
                 </flux:sidebar.group>
             </flux:sidebar.nav>
         @elseif ($userRole === 'teacher')
-            <flux:sidebar.header>
-                <x-app-logo :sidebar="true" href="{{ route('teacher.dashboard') }}" wire:navigate />
-                <flux:sidebar.collapse class="lg:hidden" />
-            </flux:sidebar.header>
-
             <flux:sidebar.nav>
-                <flux:sidebar.item icon="home" :href="route('teacher.dashboard')"
-                    :current="request()->routeIs('teacher.dashboard')" wire:navigate>
-                    {{ __('Dashboard') }}
-                </flux:sidebar.item>
-                <flux:sidebar.item icon="document-text" :href="route('teacher.materials')"
-                    :current="request()->routeIs('teacher.materials')" wire:navigate>
-                    {{ __('Materials') }}
-                </flux:sidebar.item>
-                <flux:sidebar.item icon="clipboard-document-list" :href="route('teacher.quizzes')"
-                    :current="request()->routeIs('teacher.quizzes')" wire:navigate>
-                    {{ __('Quizzes') }}
-                </flux:sidebar.item>
+                <flux:sidebar.group :heading="__(Str::ucfirst($userRole))" class="grid">
+                    <flux:sidebar.item icon="home" :href="route('teacher.dashboard')"
+                        :current="request()->routeIs('teacher.dashboard')" wire:navigate>
+                        {{ __('Dashboard') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="document-text" :href="route('teacher.materials')"
+                        :current="request()->routeIs('teacher.materials')" wire:navigate>
+                        {{ __('Materials') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="clipboard-document-list" :href="route('teacher.quizzes')"
+                        :current="request()->routeIs('teacher.quizzes')" wire:navigate>
+                        {{ __('Quizzes') }}
+                    </flux:sidebar.item>
+                </flux:sidebar.group>
             </flux:sidebar.nav>
         @elseif ($userRole === 'admin')
-            <flux:sidebar.header>
-                <x-app-logo :sidebar="true" href="{{ route('admin.dashboard') }}" wire:navigate />
-                <flux:sidebar.collapse class="lg:hidden" />
-            </flux:sidebar.header>
-
             <flux:sidebar.nav>
-                <flux:sidebar.item icon="home" :href="route('admin.dashboard')"
-                    :current="request()->routeIs('admin.dashboard')" wire:navigate>
-                    {{ __('Dashboard') }}
-                </flux:sidebar.item>
-                <flux:sidebar.item icon="users" :href="route('admin.users')"
-                    :current="request()->routeIs('admin.users')" wire:navigate>
-                    {{ __('Users') }}
-                </flux:sidebar.item>
-                <flux:sidebar.item icon="building-office" :href="route('admin.departments')"
-                    :current="request()->routeIs('admin.departments')" wire:navigate>
-                    {{ __('Departments') }}
-                </flux:sidebar.item>
+                <flux:sidebar.group :heading="__(Str::ucfirst($userRole))" class="grid">
+                    <flux:sidebar.item icon="home" :href="route('admin.dashboard')"
+                        :current="request()->routeIs('admin.dashboard')" wire:navigate>
+                        {{ __('Dashboard') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="users" :href="route('admin.users')"
+                        :current="request()->routeIs('admin.users')" wire:navigate>
+                        {{ __('Users') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="building-office" :href="route('admin.departments')"
+                        :current="request()->routeIs('admin.departments')" wire:navigate>
+                        {{ __('Departments') }}
+                    </flux:sidebar.item>
+                </flux:sidebar.group>
             </flux:sidebar.nav>
         @endif
 

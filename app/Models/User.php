@@ -78,7 +78,6 @@ class User extends Authenticatable implements PasskeyUser
     public function roles()
     {
         return $this->belongsToMany(Role::class, 'user_roles')
-            ->withTimestamps()
             ->withPivot('assigned_at');
     }
 
