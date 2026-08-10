@@ -10,9 +10,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Student routes
     Route::middleware(['role:student'])->prefix('student')->name('student.')->group(function () {
         Route::view('dashboard', 'pages.student.dashboard')->name('dashboard');
-        Route::view('material', 'pages.student.material')->name('material');
+        Route::view('material', 'pages.student.modules.index')->name('material');
         Route::view('quiz', 'pages.student.quiz')->name('quiz');
-        Route::view('grade', 'pages.student.grade')->name('grade');
+        Route::view('grade', 'pages.student.reports.index')->name('grade');
     });
 
     // Teacher routes
@@ -30,4 +30,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 });
 
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
