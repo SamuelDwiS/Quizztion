@@ -14,7 +14,8 @@ use Illuminate\Support\Str;
 use Laravel\Fortify\Contracts\PasskeyUser;
 use Laravel\Fortify\PasskeyAuthenticatable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
-
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use App\Models\StudentClass;
 /**
  * @property int $id
  * @property string $name
@@ -80,6 +81,13 @@ class User extends Authenticatable implements PasskeyUser
         return $this->belongsToMany(Role::class, 'user_roles')
             ->withPivot('assigned_at');
     }
+
+
+    public function studentClass(): BelongsTo
+    {
+        return $this->belongsTo(StudentClass::class);
+    }
+
 
     /**
      * Check whether the user has a specific role by role name.
