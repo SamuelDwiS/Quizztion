@@ -110,7 +110,7 @@
                                 size="sm">
                                 {{ $material['status'] === 'completed' ? __('Completed') : ($material['status'] === 'in-progress' ? __('In Progress') : __('Not Started')) }}
                             </flux:badge>
-                            <flux:icon name="document-text" class="size-5 text-indigo-600 dark:text-indigo-400" />
+                            {{-- <flux:icon name="document-text" class="size-5 text-indigo-600 dark:text-indigo-400" /> --}}
                         </div>
 
                         {{-- Material Info --}}
@@ -147,9 +147,9 @@
 
                         {{-- Action Buttons --}}
                         <div class="flex gap-2">
-                            <flux:button variant="subtle" size="xs" icon="book-open" class="flex-1">
-                                {{ __('Read') }}</flux:button>
-                            <flux:button variant="subtle" size="xs" icon="arrow-down-tray"></flux:button>
+                            <flux:button variant="primary" type="submit" class="min-w-0 flex-1">
+                                {{ __('Read Module') }}
+                            </flux:button>
                         </div>
                     </a>
                 @endforeach

@@ -106,6 +106,14 @@ class User extends Authenticatable implements PasskeyUser
     }
 
     /**
+     * User has progress records for learning materials.
+     */
+    public function materialProgress()
+    {
+        return $this->hasMany(ProgressStudent::class);
+    }
+
+    /**
      * User has many quiz attempts
      */
     public function quizAttempts()

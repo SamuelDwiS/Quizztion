@@ -43,4 +43,9 @@ class Material extends Model
     {
         return $this->hasMany(Quizz::class, 'material_id');
     }
+
+    public function studentProgress(): HasMany
+    {
+        return $this->hasMany(ProgressStudent::class);
+    }
 }
